@@ -107,7 +107,8 @@ This project implements a transfer learning pipeline for classifying flowers int
 * Optuna
 * scipy
 * tqdm
-* onnx (for export)
+* onnx
+* 
 
 Install via:
 
@@ -119,11 +120,13 @@ pip install torch torchvision torchmetrics optuna scipy tqdm onnx
 ### 📎 File Structure
 
 ```
-├── data/
-|   └── 102-flowers/
-|       ├── imagelabels.mat
-|       ├── setid.mat
-|       └── images.zip  
+├── app/
+|   ├── __init__.py
+|   ├── inference.py
+|   ├── main.py
+|   ├── preprocessing.py
+|   └── utils
+|       └── class_mapping.json
 |
 ├── model/
 |   ├── best_resnet50_flower.pth
