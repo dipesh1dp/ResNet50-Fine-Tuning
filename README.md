@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="frontend\assets\header.png" alt="App Header" width="200"/>
+  <img src="frontend\assets\header.png" alt="App Header" width="250"/>
 </p>
 
 ## 🌸 102 Category Flower Classification using ResNet50
