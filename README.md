@@ -50,11 +50,12 @@ This project implements a transfer learning pipeline for classifying flowers int
 2. Replace the final FC layer to output 102 classes.
 3. Freeze all layers except FC.
 4. Train with `CrossEntropyLoss`, tuned optimizer.
-5. Use Optuna to search best hyperparameters.
-6. Track `val_f1` as the objective metric.
+5. Use Optuna to search for the best hyperparameters.
+6. Track Validation F1 Score `val_f1` as the objective metric.
 7. Apply early stopping and Optuna pruning.
-8. Save the best model.
-
+8. Run final training with the best hyperparameters and early stopping.
+9. Save the best model.
+    
 ---
 
 ### ⚙️ Hyperparameters Tuned via Optuna
