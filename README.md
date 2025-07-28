@@ -67,28 +67,6 @@ This project implements a transfer learning pipeline for classifying flowers int
 
 ---
 
-### 💾 Saving & Exporting the Model
-
-* **Save best PyTorch model:**
-
-  ```python
-  torch.save(best_model_wts, "best_resnet50_flower.pth")
-  ```
-
-* **Load for inference:**
-
-  ```python
-  model.load_state_dict(torch.load("best_resnet50_flower.pth"))
-  ```
-
-* **Export to ONNX:**
-
-  ```python
-  torch.onnx.export(model, dummy_input, "resnet50_flower.onnx", ...)
-  ```
-
----
-
 ## 📊 Results & Performance
 
 ### Best Hyperparameters:
@@ -115,22 +93,33 @@ This project implements a transfer learning pipeline for classifying flowers int
 ---
 ## How to run? 
 
-Use a virtual environment 
+1. Clone the Repository
+```bash
+git clone https://github.com/dipesh1dp/toxic-comment-app.git
+cd bert-toxic-comment-classifier
+```
+2. Create and Activate a Virtual Environment (Optional but Recommended)
+On Windows:
 ```bash
 python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
+venv\Scripts\activate
 ```
-Install all dependencies
+On macOS/Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+3. Install all dependencies
 ```bash
 pip install -r requirements.txt
 ```
-Run the FastAPI server 
+4. Run the FastAPI server 
 ```bash
 uvicorn app.main:app --reload 
 ```
 Your backend will now be running at: http://127.0.0.1:8000. You can also see the docs at: http://127.0.0.1:8000/docs
 
-Run the Streamlit frontend
+5. Run the Streamlit frontend
 ```bash
 streamlit run frontend/streamlit_ui.py
 ```
