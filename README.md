@@ -119,7 +119,6 @@ Use a virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
 ```
 Install all dependencies
 ```bash
@@ -136,12 +135,6 @@ Run the Streamlit frontend
 streamlit run frontend/streamlit_ui.py
 ```
 
-
-Install via:
-
-```bash
-pip install torch torchvision torchmetrics optuna scipy tqdm onnx 
-```
 ---
 
 ### 📎 File Structure
