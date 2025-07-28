@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="frontend\assets\header.png" alt="App Header" width="200"/>
+</p>
+
 ## 102 Category Flower Classification using ResNet50
 
 This project implements a transfer learning pipeline for classifying flowers into 102 categories using a pretrained ResNet-50 model. The model is fine-tuned on the [Oxford 102 Flower Dataset](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html), with hyperparameter tuning done using **Optuna** and support for **ONNX export**.
@@ -17,6 +21,17 @@ This project implements a transfer learning pipeline for classifying flowers int
 * Model export to PyTorch `.pth` and ONNX `.onnx` format
 
 ---
+
+## Demo 
+<p align="left">
+  <img src="frontend\assets\input.png" alt="App Header" width="500"/>
+</p>
+
+### Output
+<p align="left">
+  <img src="frontend\assets\output.png" alt="App Header" width="500"/>
+</p>
+
 
 ### 📁 Dataset
 
@@ -108,7 +123,7 @@ This project implements a transfer learning pipeline for classifying flowers int
 * scipy
 * tqdm
 * onnx
-* 
+
 
 Install via:
 

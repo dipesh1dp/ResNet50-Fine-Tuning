@@ -6,6 +6,10 @@ from app.inference import predict
 
 app = FastAPI(title='Flowe classifier API') 
 
+@app.get("/") 
+def get_post(): 
+    print("Flower Classifier running...")
+
 @app.post("/predict/") 
 async def predict_flower(file: UploadFile = File(...)): 
     contents = await file.read() 
