@@ -23,11 +23,11 @@ This project implements a transfer learning pipeline for classifying flowers int
 ---
 
 ## Demo 
+
 <p align="left">
   <img src="frontend\assets\input.png" alt="App Header" width="600"/>
 </p>
 
-### Output
 <p align="left">
   <img src="frontend\assets\output.png" alt="App Header" width="600"/>
 </p>
