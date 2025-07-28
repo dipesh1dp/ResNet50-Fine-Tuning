@@ -113,16 +113,28 @@ This project implements a transfer learning pipeline for classifying flowers int
 
 
 ---
-## 🚀 Requirements
+## How to run? 
 
-* Python 3.8+
-* PyTorch
-* torchvision
-* torchmetrics
-* Optuna
-* scipy
-* tqdm
-* onnx
+Use a virtual environment 
+```bash
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+```
+Install all dependencies
+```bash
+pip install -r requirements.txt
+```
+Run the FastAPI server 
+```bash
+uvicorn app.main:app --reload 
+```
+Your backend will now be running at: http://127.0.0.1:8000. You can also see the docs at: http://127.0.0.1:8000/docs
+
+Run the Streamlit frontend
+```bash
+streamlit run frontend/streamlit_ui.py
+```
 
 
 Install via:
@@ -140,12 +152,19 @@ pip install torch torchvision torchmetrics optuna scipy tqdm onnx
 |   ├── inference.py
 |   ├── main.py
 |   ├── preprocessing.py
-|   └── utils
+|   └── utils/
 |       └── class_mapping.json
 |
 ├── model/
 |   ├── best_resnet50_flower.pth
 |   └── resnet50_flower.onnx
+|
+├── frontend/
+|   ├── streamlit_ui.py
+|   └── assets/
+|       ├── header.png
+|       ├── input.png 
+|       └── output.png
 |
 ├── model-training.ipynb            # Training Notebook (ran on Kaggle)
 └── README.md
