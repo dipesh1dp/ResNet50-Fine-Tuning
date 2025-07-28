@@ -2,7 +2,7 @@
   <img src="frontend\assets\header.png" alt="App Header" width="200"/>
 </p>
 
-## 102 Category Flower Classification using ResNet50
+## 🌸 102 Category Flower Classification using ResNet50
 
 This project implements a transfer learning pipeline for classifying flowers into 102 categories using a pretrained ResNet-50 model. The model is fine-tuned on the [Oxford 102 Flower Dataset](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html), with hyperparameter tuning done using **Optuna** and support for **ONNX export**.
 
@@ -32,8 +32,8 @@ This project implements a transfer learning pipeline for classifying flowers int
   <img src="frontend\assets\output.png" alt="App Header" width="600"/>
 </p>
 
-
-### 📁 Dataset
+## 🧪 Training Details 
+### 📁Dataset
 
 * [Oxford 102 Category Flower Dataset](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html)
 * Dataset contains:
@@ -44,7 +44,7 @@ This project implements a transfer learning pipeline for classifying flowers int
 
 ---
 
-### 🧪 Training Workflow
+### ⚒ Training Workflow
 
 1. Load pretrained ResNet-50 from `torchvision.models`.
 2. Replace the final FC layer to output 102 classes.
@@ -58,9 +58,9 @@ This project implements a transfer learning pipeline for classifying flowers int
     
 ---
 
-### ⚙️ Hyperparameters Tuned via Optuna
+### ⚙ Hyperparameters Tuned via Optuna
 
-* `learning_rate`: Log-uniform between `1e-5` and `1e-2`
+* `learning_rate`: between `1e-5` and `1e-2`
 * `batch_size`: `[8, 16, 32]`
 * `optimizer`: `['Adam', 'SGD']`
 * `weight_decay`: `1e-5` to `1e-2`
